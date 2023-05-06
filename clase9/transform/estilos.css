@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.elemento {
+    /* width: 200px;
+    height: 200px;
+    background-color: #4682b4;
+    margin: 60px; */
+
+    /* se utiliza para aplicar transformaciones a elementos */
+
+    /*
+    translate() se utiliza para mover un elemento en la pantalla
+    rotate() se utiliza para rotar un elemento alrededor de un punto
+    scale() se utiliza para escalar el tamaño de un elemento */
+
+    /* transform: translate(350px,400px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(2,4); */
+
+    /* transform: rotate(-45deg) scale(2) translate(50px,100px) ; */
+
+    /* transition me permite manipular a travez del tiempo las tranformacion */
+
+    /* transform:rotate(70deg); */
+    /* transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function:ease; */
+
+    /* duracion propiedad avance delay */
+   
+    /* transition: 2s all ease-in 0s; */
+
+}
+
+
+.elemento2{
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    margin: 60px;
+
+    transition-property: background-color,transform;
+    transition-duration: 3s;
+}
+
+.container:hover .elemento2{
+    background-color: blue;
+    transform: translate(200px);
+
+    /* sombras:
+    izq/der arriba/abajo difuminado */
+     box-shadow: 10px 10px 20px;
+}

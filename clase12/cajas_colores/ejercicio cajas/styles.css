@@ -1,0 +1,17 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.rojo{background-color: red;}
+.azul{background-color: blue;}
+.verde{background-color: green;}
+.naranja{background-color: orangered;}
+.fucsia{background-color: blueviolet;}
+.gris{background-color: grey;}
+
+
+

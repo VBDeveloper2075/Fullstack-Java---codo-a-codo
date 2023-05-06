@@ -1,0 +1,62 @@
+/* -------- selector de atributo --------- */
+/* el selector de atributo nos permite aplicar estilos en base a los atributos de nuestros elementos */
+
+/* input {
+    border: 1px solid red;
+}
+
+input[type="text"] {
+    background-color: aqua;
+} */
+
+/* ------------- hermanos generales -------------- */
+/* El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común */
+
+/* p~span {
+    color: blue;
+} */
+/* .span{
+    color:red
+} */
+/* .span{
+    color: crimson;
+    background-color: aqua;
+} */
+
+/* ------------- hermanos adyacentes ------------ */
+/* Sólo seleccionará un elemento especificado que esté inmediatamente después de otro elemento especificado
+
+        elemento_anterior + elemento_afectado { estilos }
+ */
+
+ /* div,h1,p{
+    background-color: aqua;
+ } */
+
+
+h2+p {
+    color: blue;
+}
+/* p+p{
+    color: crimson;
+} */
+
+/* ------------- selector de hijo directo ------------ */
+/* separa a dos selectores y busca solo a los elementos que coindicen con el segundo selector y que son hijos directos del primero */
+
+/* div>p,section>p {
+    color: blue;
+    background-color: white;
+} */
+
+/* selector descendiente (espacio) */
+/* -combina dos selectores
+-incluye sólo los elementos que coinciden con el segundo selector para los que hay un elemento ancestro que coincide con el primer selector
+-Los selectores descendientes son SIMILARES a selectores hijos , pero no requieren que la relación entre los elementos sea estrictamente entre padres e hijos. */
+
+div span { 
+    background-color: steelblue; 
+    /* color: green; */
+}
+
+/* span { background-color: aqua; } */

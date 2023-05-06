@@ -1,0 +1,75 @@
+body {
+    background: antiquewhite;
+}
+
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid black;
+
+    /* esta propiedad es la que permite que un elemento se convierta en un contenedor de "grid" */
+    display: grid;
+
+    grid-template-columns: auto auto;
+    /* esta propiedad define la cantidad y el tamaño de las columnas de la cuadrícula */
+    /* Un valor fijo en píxeles (por ejemplo, "100px").
+    Un valor porcentual que indica el ancho de la columna en relación con el ancho del contenedor de la cuadrícula (por ejemplo, "20%").
+    La palabra clave "auto", que indica que la columna debe tener el ancho suficiente ara contener su contenido.
+    La palabra clave "repeat(n, value),que indica que se deben repetir "n" veces los valores especificados. Por ejemplo, "repeat(3, 100px)" creará tres columnas de ancho fijo de 100 píxeles cada una.
+    Valores fraccionales (por ejemplo, "1fr", "2fr", etc.),
+    que se usan para dividir el espacio disponible entre las columnas de manera proporcional. */
+    /* grid-template-columns: 100px 1fr 20% auto; */
+
+
+    grid-template-rows: auto;
+    /* esta propiedad define la cantidad y el tamaño de las filas de la cuadrícula */
+    /* -Un valor fijo en píxeles (por ejemplo, "100px").
+    -Un valor porcentual que indica la altura de la fila en relación con la altura del contenedor de la cuadrícula (por ejemplo, "20%").
+    -La palabra clave "auto", que indica que la fila debe tener la altura suficiente para contener su contenido.
+    -La palabra clave "minmax(min, max)", que indica que la fila debe tener una altura mínima de "min" y una altura máxima de "max". Esta es una forma útil de hacer que las filas sean flexibles.
+    -La palabra clave "repeat(n, value)", que indica que se deben repetir "n" veces los valores especificados. Por ejemplo, "repeat(3, 100px)" creará tres filas de altura fija de 100 píxeles cada una.
+    -Valores fraccionales (por ejemplo, "1fr", "2fr", etc.), que se usan para dividir el espacio disponible entre las filas de manera proporcional */
+    /* grid-template-rows: 100px 1fr 20% auto; */
+
+
+
+}
+
+.caja {
+
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 150px;
+}
+
+/* caractertisticas individuales de los elementos */
+
+.c1 {
+    /* grid-column: 1/3; */
+    /* se utiliza para definir en qué columna o conjunto de columnas debe colocarse un elemento 
+    La primera parte define la columna en la que comienza el elemento.
+    La segunda parte (opcional) define la columna en la que termina el elemento 
+    
+    valores aceptados:
+    Un número entero que indica el número de la columna.
+    La palabra clave "span" seguida de un número entero que indica cuántas columnas debe abarcar el elemento.
+    La palabra clave "auto", que indica que el elemento debe colocarse automáticamente en la siguiente columna disponible.
+    La palabra clave "start" o "end", que indica el comienzo o el final de la cuadrícula, respectivamente*/
+}
+
+/* .c10{
+    grid-column: 1/span 3;
+    background-color: lightblue;
+}
+.c9{
+    grid-column: 2;
+} */
+
+/* grid row */
+
+.c1{
+    grid-row: 1 / span 2;
+}

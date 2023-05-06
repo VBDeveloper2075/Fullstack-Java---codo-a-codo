@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+div{
+    background-color: brown;
+    width: 500px;    
+    /* width: 80%; */
+    height: 300px;
+    /* height: 90%; */
+   
+}
+
+img{
+
+
+    /* width: 60%;
+    height: 60%; */
+    
+    /* El viewport es el area visible de una pagina web */
+    height: 60vh;
+    width: 60vw;
+}

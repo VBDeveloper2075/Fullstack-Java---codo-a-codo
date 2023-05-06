@@ -1,0 +1,34 @@
+/*comentarios*/
+
+/* selector universal */
+/* aplica a todos los elementos */
+*{
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* selector de tipo */
+/* es el nombre de la etiqueta */
+h2{
+    color: brown;
+}
+
+/* selector de clase */
+
+.pelicula{
+    color: blue;
+}
+.favorita{
+    font-size: 20px;
+}
+.peliculas{
+    color: blueviolet;
+}
+.favorita{
+    font-size: 40px;
+}
+
+/* selector de id */
+#idFavorita{
+    font-size: 5px;
+}

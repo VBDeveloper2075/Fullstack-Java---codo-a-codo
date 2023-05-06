@@ -1,0 +1,67 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+
+/* ----------------- transiciones ----------------- */
+/* Las transiciones en CSS son animaciones que se aplican a los cambios de estado de un elemento HTML, como por ejemplo su posición, tamaño, color, opacidad, etc.
+ Las transiciones permiten que estos cambios se realicen de manera gradual y suave, en lugar de suceder de forma abrupta y poco estética */
+
+.mi-botón {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  
+
+  /* transition-property: background-color; */
+  /* define las propiedades CSS que se animarán durante la transición
+      puedes definir la transición de una sola propiedad o de varias propiedades separadas por comas */
+
+  /* transition-duration: 1s; */
+  /* Esta propiedad establece la duración de la transición en segundos o milisegundos */
+
+  /* transition-timing-function: cubic-bezier(.01,.79,.99,.51); */
+  /* Esta propiedad define el tipo de curva de velocidad de la transición.
+   Hay varios tipos predefinidos disponibles como "ease", "ease-in", "ease-out", "ease-in-out"
+   o puedes definir tus propios valores utilizando la función "cubic-bezier". https://cubic-bezier.com/#.46,.45,.37,.36 */
+
+   /* transition-delay: 2s; */
+  /* establece el tiempo de espera antes de que comience la transición */
+
+  /*    ------------contenido en una sola linea-------------     */
+
+  /* transition: [property] [duration] [timing-function] [delay]; */
+  /* transition: background-color 1s ease 1s,color 2s ease-in 2s; */
+}
+
+.mi-botón:hover {
+  background-color: red;
+  color: black;
+}
+
+
+.mi-elemento {
+  background-color: #b1c592;
+  transition: width 1s ease, height 1s ease, box-shadow 1s ease;
+}
+
+.mi-elemento:active {
+  width: 250px;
+  height: 250px;
+
+
+  /* --se utiliza para agregar sombras a los elementos-- */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  /* En este caso, la sombra tiene:
+   un desplazamiento horizontal de 5 píxeles
+   un desplazamiento vertical de 5 píxeles
+   un desenfoque de 10 píxeles 
+   un color de negro con una opacidad del 50% (utilizando rgba(0, 0, 0, 0.5)).
+   inset agrega la sombra interna
+   Esto crea una sombra suave y difusa en la esquina inferior derecha del elemento */
+}

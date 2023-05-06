@@ -1,0 +1,3 @@
+guia git facil:http://rogerdudler.github.io/git-guide/index.es.html
+
+aprende git jugando:https://learngitbranching.js.org/?locale=es_ES

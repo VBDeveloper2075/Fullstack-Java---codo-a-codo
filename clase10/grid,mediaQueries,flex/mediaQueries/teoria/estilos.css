@@ -1,0 +1,26 @@
+
+/* Media Queries es una característica de CSS que permite adaptar el estilo de una página web a diferentes dispositivos y tamaños de pantalla. Es una técnica de diseño web responsable (también conocido como diseño adaptable o diseño responsivo) que permite crear diseños fluidos y flexibles que se adaptan automáticamente a diferentes resoluciones de pantalla, tamaños de dispositivo y orientaciones. */
+
+
+/* Las Media Queries se definen en CSS utilizando la regla "@media" */
+
+@media screen and (max-width: 1920px){
+    body{
+        background-color: aquamarine;
+    }
+}
+@media screen and (max-width: 1280px){
+    body{
+        background-color: lightpink;
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        background-color: lightsalmon;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        background-color: lightcoral;
+    }
+}

@@ -1,0 +1,12 @@
+pasos para resolver el ejercicio:
+
+1-creamos container y una fila que va a contener 4 columnas
+2-creamos los estilos css de los colores de las cajas
+3-a cada columna le damos un padding p-1 excepto columna contenido
+4-asignamos los colores(&nbsp; es para mostrar div sin contenido)
+5-asignamos comportamiento (col-tamaño-espacio)
+6-dividimos la columna de contenido en 1 fila,4 columnas
+7-asignamos los colores 1 columna fucsia-2 columnas naranjas-1 columna azules
+    llevan py-1
+8-a la columna de las cajas azules,asignamos una fila con 10 columnas
+9-a la fila le asignamos "row-cols-md-5 row-cols-sm-3 row-cols-2".Con esto le damos el comportamiento a las cajas azules,les decimos como se tienen que agrupar dependiendo del tamaño.En la pagina de bootstrap seccion "grid/row" explica cuando son cajas genericas le podemos dar una distribucion

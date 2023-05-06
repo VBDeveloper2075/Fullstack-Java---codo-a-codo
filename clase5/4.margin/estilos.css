@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.caja1{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+    margin: 50px;
+    padding: 10px; 
+    border: 10px brown solid;  
+    box-sizing: content-box; 
+
+}
+
+.caja2{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+    text-align: center;
+
+    /* margin-top: 50px; */
+    /* margin: 50px 20px 10px 15px; */
+    /* margin: 60px; */
+    padding: 20px;
+    border: 2px red solid;
+    
+
+}

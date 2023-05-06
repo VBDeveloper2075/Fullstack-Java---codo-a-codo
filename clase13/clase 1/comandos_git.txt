@@ -1,0 +1,44 @@
+pwd = vemos donde estamos posicionados
+ls = listamos archivos
+ls -a = listamos archivos,incluidos los ocultos
+mkdir = creamos archivos
+cd = navegamos en las carpetas
+cd .. = volvemos una carpeta atras
+git init = inicializamos repositorio
+clear = limpiamos pantalla
+git log = vemos commits generados
+
+git add (especificamos archivo)=agregamos el archivo al "stage area"
+git add . = agregamos todos los archivos 
+git commit= confirmamos los cambios
+git diff = vemos las diferencias de los cambios
+git status = vemos el estado en "area de trabajo" y en "area de preparacion"
+git log = vemos la "historia" del proyecto
+git log -(n)= especificamos la cantidad de commits que queremos visualizar
+git log --oneline = vemos los cambios en una sola linea
+git log --author="nombre" = buscamos por descripcion
+git log --graph --all = vemos graficamente toda la historia de nuestro proyecto(ramas)
+
+git commit --amend = modificamos commit anterior
+git commit --amend -m "mensaje nuevo" = modificamos la descripcion de la confirmacion
+
+git checkout (commit) = vemos el estado de la confirmacion  
+git revert = deshacemos los cambios pero no borramos el commit
+git reset = deshacemos los cambios y borramos la confirmaciones
+git restore = restauramos cambios
+
+git branch (nombre)=creamos ramas
+git branch -a = listamos las ramas
+git branch -m (nombre anterior) (nombre nuevo) = modificamos nombre de la rama
+git branch -d = borramos la rama junto a todos sus cambios
+git branch -b = creamos rama y nos posicionamos en esta
+
+git merge (nombre de la rama)=fusionamos las ramas;debemos posicionarnos en la rama de destino
+
+
+
+
+
+
+
+

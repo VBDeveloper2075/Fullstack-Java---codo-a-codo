@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  /* igualamos 1rem=10px */
+  /* font-size: 62.5%; */
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* font-size: 80px; */
+}
+
+.buttons > * {
+  display: inline-block;
+  color: white;
+  background-color: #0473db;
+  box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+}
+
+
+.btn-px {
+  font-size: 80px;
+  padding: .5em;
+  margin: .25em;
+}
+
+.btn-rem {
+  /* relativo al valor por defecto del navegador */
+  font-size: 5rem /* 5 * 16px base = 80px */;
+
+  /* relativo a la herencia (elemento que lo contiene */
+  padding: .5em;
+  margin: .25em;
+}
+
+

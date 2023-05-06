@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    border: .10em solid #0f4571;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+}

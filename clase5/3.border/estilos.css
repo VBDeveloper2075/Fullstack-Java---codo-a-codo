@@ -1,0 +1,23 @@
+.caja{
+    /* background-color: aqua; */
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+
+    /* border-right-style: solid;
+    border-bottom-style: dashed; */
+    
+
+    border:2px red solid;
+    border-radius: 50px;
+
+}
+
+.caja p{
+    background-color: aqua;
+    text-align: center;
+}

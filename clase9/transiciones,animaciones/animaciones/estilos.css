@@ -1,0 +1,99 @@
+
+
+
+/* Las animaciones en CSS te permiten crear efectos de movimiento y transición más complejos que las transiciones CSS básicas. Las animaciones te permiten definir una secuencia de pasos a través de la cual un elemento debe cambiar su estilo a lo largo del tiempo.
+
+Las animaciones en CSS se definen utilizando la regla @keyframes, que permite especificar la secuencia de pasos que se deben animar. Cada paso se define mediante una regla que indica cómo se debe ver el elemento en ese punto en el tiempo.  */
+
+
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+
+    /* declaramos el nombre de la animacion */
+    animation-name: mianimacion;
+
+    /* duracion de la animacion */
+    animation-duration: 4s;
+
+    /* añadimos retardo de la animacion */
+    animation-delay: 1s;
+
+    /* alternamos direccion de la animacion */
+    animation-direction: alternate;
+
+    /* cambiamos la velocidad */
+    animation-timing-function: ease-in-out;
+
+    /* cuantas veces queremos que se repita */
+    animation-iteration-count: 4;
+
+    /* añadimos relative para poder moverlo */
+    position: relative;
+}
+
+/* son los diferentes puntos donde la animacion se va a desarrollar */
+/* @keyframes identifier {
+    explicamos como va a ser la animacion    
+} */
+@keyframes mianimacion {
+
+    0% {
+        background: #aaa;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background: red;
+        left: 300px;
+        top: 0;
+    }
+
+    50% {
+        background: green;
+        left: 300px;
+        top: 300px;
+    }
+
+    75% {
+        background: pink;
+        left: 0;
+        top: 300px;
+    }
+
+    100% {
+        background: blue;
+        left: 0;
+        top: 0;
+    }
+
+}
+
+
+/* otras formas de declarar animaciones */
+.elemento{
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes mover {
+    from {
+      transform: translateX(0);
+      transform: rotate(50deg);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }

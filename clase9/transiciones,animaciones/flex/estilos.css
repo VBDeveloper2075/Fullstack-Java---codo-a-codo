@@ -1,0 +1,113 @@
+body {
+  background-color: beige;
+}
+
+.caja {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(70, 69, 69);
+  background-color: white;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Flexbox
+flexbox fue diseñado como un modelo unidimensional de layout,
+y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
+*/
+
+.flex-container {
+  border: 1px solid black;
+  background: #ccc;
+  padding: 20px;
+  /* height:400px; */
+
+
+  display: flex;
+  /* agregamos al contenedor */
+
+  /* flex-direction: row; */
+  /* se utiliza para definir la dirección en la que se colocarán los elementos dentro del contenedor flexible Por defecto,
+  flex-direction está establecido en row,
+  lo que significa que los elementos se colocarán en una fila de izquierda a derecha en el contenedor row: los elementos se colocan en una fila de izquierda a derecha.  
+  row-reverse: los elementos se colocan en una fila de derecha a izquierda.
+  column: los elementos se colocan en una columna de arriba hacia abajo.
+  column-reverse: los elementos se colocan en una columna de abajo hacia arriba. */
+
+  /* flex-wrap: wrap; */
+  /* definimos si los elementos flexibles dentro del contenedor deben envolver o no a medida que el contenedor cambia de tamaño
+  nowrap: los elementos flexibles se colocan en una sola línea.
+  wrap: los elementos flexibles se dividen en varias líneas si es necesario.
+  wrap-reverse: los elementos flexibles se dividen en varias líneas, pero en orden inverso */
+
+  /* puedo combinar las dos propiedades */
+  flex-flow: row wrap;
+
+  /* justify-content: space-around; */
+  /* se utiliza para alinear los elementos flexibles horizontalmente dentro del contenedor flexible
+  
+  flex-start: los elementos se alinearán en el extremo izquierdo del contenedor.
+  flex-end: los elementos se alinearán en el extremo derecho del contenedor.
+  center: los elementos se alinearán en el centro horizontal del contenedor.
+  space-between: los elementos se distribuirán uniformemente en la línea; el primer elemento se colocará en el extremo izquierdo del contenedor, y el último elemento se colocará en el extremo derecho del contenedor.
+  space-around: los elementos se distribuirán uniformemente en la línea, con un espacio igual entre ellos y alrededor de ellos */
+
+  /* align-items: flex-start; */
+  /* se utiliza para alinear los elementos flexibles verticalmente dentro del contenedor flex
+
+  flex-start: los elementos se alinearán en la parte superior del contenedor.
+  flex-end: los elementos se alinearán en la parte inferior del contenedor.
+  center: los elementos se alinearán en el centro vertical del contenedor.
+  baseline: los elementos se alinearán según su línea base (la línea donde se apoyan los caracteres de texto).
+  stretch: los elementos se estirarán para llenar el contenedor verticalmente. */
+
+  /* align-content: space-between; */
+  /* Se utiliza para distribuir el espacio extra vertical dentro del contenedor flexible cuando hay varias líneas de elementos flexibles. Esta propiedad controla cómo se distribuye el espacio extra vertical entre las líneas de elementos dentro del contenedor.
+  Solo tiene efecto si hay múltiples líneas de elementos flexibles y si hay espacio adicional en el eje vertical del contenedor. Si solo hay una línea de elementos flexibles, esta propiedad no tendrá ningún efecto
+  
+  flex-start: las líneas de elementos se alinearán en la parte superior del contenedor.
+  flex-end: las líneas de elementos se alinearán en la parte inferior del contenedor.
+  center: las líneas de elementos se alinearán en el centro vertical del contenedor.
+  space-between: las líneas de elementos se distribuirán uniformemente en el eje vertical del contenedor; la primera línea se colocará en la parte superior del contenedor, y la última línea se colocará en la parte inferior del contenedor.
+  space-around: las líneas de elementos se distribuirán uniformemente en el eje vertical del contenedor, con un espacio igual entre ellas y alrededor de ellas.
+  stretch: las líneas de elementos se estirarán para llenar el contenedor verticalmente.
+  */
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+Propiedad order
+La propiedad order se utiliza para cambiar el orden de los elementos dentro del contenedor flexible. Por defecto, los elementos se ordenan en función del orden en que aparecen en el código HTML.
+
+La propiedad order toma un valor numérico que se utiliza para establecer el orden de los elementos flexibles dentro del contenedor flexible. Los elementos con un valor de order menor aparecerán antes que los elementos con un valor de order mayor. Si dos o más elementos tienen el mismo valor de order, se ordenarán en función del orden en que aparecen en el código HTML. */
+
+
+.caja1{
+  background-color: lightblue;
+  order: 1;
+  /* flex-grow: 1; */
+}
+.caja2{
+  background-color: lightgreen;
+  order: 2;
+  /* flex-grow: 1; */
+}
+.caja3{
+  background-color: lightsalmon;
+  order: 3;
+  /* flex-grow: 1; */
+}
+.caja4{
+  background-color: lightpink;
+  order: 4;
+  /* flex-grow: 1; */
+}
+
+/* La propiedad flex-grow se utiliza para especificar la proporción en la que un elemento flexible debe crecer con respecto a los demás elementos dentro del mismo contenedor flexible
+toma un valor numérico que se utiliza para determinar la proporción en la que un elemento flexible debe crecer. Si todos los elementos flexibles tienen un valor de flex-grow de 1, crecerán de manera uniforme y ocuparán todo el espacio disponible en el contenedor flexible. Si un elemento flexible tiene un valor de flex-grow de 2 y los demás tienen un valor de 1, el elemento flexible con un valor de 2 crecerá el doble de rápido que los demás elementos flexibles */

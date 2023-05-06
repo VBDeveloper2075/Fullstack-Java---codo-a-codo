@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+
+/* colores */
+/* formas de ingresar colores
+nombres
+valores hexadecimales
+valores rgb
+valores rgba
+valores hsl
+valores hsla */
+
+h1{
+    color:rgb(34, 155, 34);
+}
+
+h2{
+    color:rgba(0, 255, 94, 0.448);
+}
+
+/* body{
+    background-color:hsl(120, 40%, 50%);
+    background-color: hsl(hue, saturation, lightness);
+} */
+
+p{
+    color:rgba(17, 17, 16, 0.223);
+}
+
+p{
+    color:black;
+}
+/* propiedades de textos */
+p{
+    text-align:center;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: 'McLaren', cursive;
+}
+h1{
+    text-decoration: underline overline;
+}
+ /* agregar fuentes desde google fonts */
+
+ p{
+    font-family: 'McLaren', cursive;   
+ }
+ h1{
+    font-family: 'Roboto', sans-serif;
+ }
+ h2{
+    font-family: 'McLaren', cursive;
+ }

@@ -1,0 +1,32 @@
+Display:
+tipos display: inline-block-flex-none
+sintaxis: d-tipo
+          d-tamaño-tipo
+d-flex:
+hacemos el elemento "flexible",se lo agregamos al padre para organizar a sus hijos directos(justify-content-between).
+Lo podemos asignar a un tamaño de pantalla especifico
+sintaxis:d-pantalla-flex
+
+margin/padding(m o p):
+-t:margin/padding top
+-b:margin/padding bottom
+-s:(start)margin/padding left
+-e:(end)margin/padding right
+-x:(eje de las x)left/right
+-y:(eje de las y)top/bottom
+tamaño(size):del 1 hasta el 5
+            
+imagenes:   img-fluid:aplica ancho 100% y un alto "auto".la imagen va a escalar con el elemento
+            img-thumbnail:aplica un margen/recuadro(ver "borders" en pagina bootstrap)
+
+alinear imagenes/textos: -ver clases float(utilities/float)
+                         -text-align (utilities/text)
+
+bordes: rounded:redondea las cuatro esquinas del elemento
+        rounded-circle:nos permite redondear 100% las esquinas(circulo)
+        rounded-pill:el elemento tiene que ser un rectangulo,forma una ovalo(pill=pastilla)
+        rounded-(lado):top/right/bottom/left
+        rounded-0:elimina los bordes
+        rounded-sm/lg:tamaños que nos provee bootstrap
+
+ 

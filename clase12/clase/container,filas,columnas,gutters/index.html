@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .row {
+            background-color: steelblue;
+            /* padding: 10px;
+            margin: 10px; */
+            height: 200px;
+        }
+
+        .row>div {
+            background-color: lightgrey;
+            /* margin: 2px; */
+        }
+    </style>
+    <title>Bootstrap demo</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <!-- "container" es un elemento HTML que se utiliza para envolver y contener el contenido de una página web
+            "container" establece un ancho fijo para el contenido y lo centra en la página, lo que hace que el contenido tenga un margen en los lados izquierdo y derecho.
+            "container-fluid" ocupa todo el ancho disponible de la pantalla, lo que significa que no hay ningún margen en los lados izquierdo y derecho.
+            "container-sm/md/lg/xl/xxl" establece diferentes anchuras para diferentes tamaños de pantalla, lo que permite que el contenido se adapte a diferentes dispositivos y pantallas.
+    -->
+    <!-- <header class="container-md bg-success">
+        <h1>hola</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aperiam quisquam magni tempore nulla commodi esse, natus, veniam porro quidem voluptas, possimus ipsam saepe! Pariatur dolore est enim quos provident?
+        Animi possimus voluptatum maxime quisquam nam inventore ipsam aliquid dolores, aperiam vel quae unde tempora eveniet harum obcaecati quo culpa deleniti rerum officia beatae vero? Voluptatibus impedit repellendus aut temporibus!</p>
+    </header>
+    <div class="container bg-success">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque suscipit voluptatum aliquid amet
+            nam? Natus architecto, nihil atque ad id corrupti similique aut quibusdam fugit nostrum quos cumque
+            cupiditate.</p>
+    </div> -->
+
+    <!-- filas y columnas
+    El sistema se basa en una cuadrícula de 12 columnas que se pueden utilizar para organizar el contenido de una página web 
+    se utiliza la clase "row" para crear una fila y luego se agregan las columnas en esa fila utilizando las clases "col-*" (donde el asterisco representa el número de columnas que se desea que ocupe la columna)
+    Además, se pueden utilizar las clases "col-sm-", "col-md-", "col-lg-" y "col-xl-" para establecer diferentes anchuras de columna en diferentes tamaños de pantalla-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-10">col 2</div>
+            <div class="col-3">col 1</div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">uno</div>
+                    <div class="col">dos</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                    <div class="col">tres</div>
+                </div>
+            </div>
+            <div class="col">col 2</div>
+            <div class="col">col 3 </div>
+        </div>
+    </div> -->
+
+    <!-- alinear filas y columnas
+    En Bootstrap, se pueden alinear las filas y las columnas utilizando diferentes clases de alineación
+
+    Clases de alineación vertical para filas:
+    "align-items-start": alinea las filas en la parte superior del contenedor.
+    "align-items-center": alinea las filas en el centro del contenedor.
+    "align-items-end": alinea las filas en la parte inferior del contenedor.    -->
+
+    <!-- <div class="container text-center bg-primary">
+        <div class="row align-items-start">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Clases de alineación horizontal para columnas:
+    "justify-content-start": alinea las columnas a la izquierda del contenedor.
+    "justify-content-center": alinea las columnas en el centro del contenedor.
+    "justify-content-end": alinea las columnas a la derecha del contenedor.
+    "justify-content-around": distribuye el espacio sobrante de manera uniforme entre las columnas.
+    "justify-content-between": distribuye las columnas de manera uniforme, pero sin espacio entre ellas. -->
+
+    <!-- <div class="container-fluid text-center bg-primary">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-2">
+                One of three columns
+            </div>
+            <div class="col-2">
+                One of three columns
+            </div>
+            <div class="col-2">
+                One of three columns
+            </div>
+            <div class="col-2">
+                One of three columns
+            </div>
+        </div>
+    </div> -->
+
+    <!-- order
+    la clase "order" se utiliza para controlar el orden de visualización de los elementos en una página web -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-5 order-md-2 order-2 h-50">
+                <p>Texto</p>
+            </div>
+            <div class="col-md-5 order-md-1 order-1 h-50">
+                <img class="h-100" src="codo.png" alt="Imagen">
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col order-last">
+                primero en html,ordenado ultimo
+            </div>
+            <div class="col">
+                segundo en html,sin orden
+            </div>
+            <div class="col order-first">
+                tercero en html,ordenado primero
+            </div>
+        </div>
+    </div> -->
+    <!-- offset
+    La clase offset permite mover una columna hacia la derecha, creando un espacio en blanco a su izquierda. Esto se puede utilizar para crear diseños asimétricos y para ajustar el ancho de las columnas en función de las necesidades del diseño.
+    .offset-{tamaño de columna}
+
+ -->
+    <!-- <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-2">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+    </div> -->
+
+    <!-- la propiedad gap se utiliza para controlar el espacio entre las columnas de una fila. Esta propiedad se puede aplicar a través de diferentes breakpoints (sm, md, lg y xl) -->
+
+    <!-- <div class="container px-4">
+        <div class="row border gx-3">
+            <div class="col">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container text-center">
+        <div class="row gy-5 gx-1">
+            <div class="col-6">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-light">columna</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
