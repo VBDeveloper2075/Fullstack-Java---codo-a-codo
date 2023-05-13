@@ -129,11 +129,11 @@ Primitivos: son aquellos que representan un único valor
 
 // console.log(numero1 + cadena1);
 // console.log(cadena1 + numero1);
-// let numero1 = "2";
-// let numero2 = "2";
+// let numero1 = false;
+// let numero2 = 2;
 // console.log(numero1 + numero2);
 // console.log(typeof numero1);
-// alert(typeof(numero1));
+// alert(typeof numero1);
 // console.log(typeof(numero1));
 
 // console.log(numero2 + cadena2 + numero1);
@@ -153,16 +153,22 @@ Primitivos: son aquellos que representan un único valor
 // console.log(typeof dinamico);
 // dinamico = "hola";
 // console.log(typeof dinamico);
+// let numero = 1;
+// console.log(typeof numero);
+// numero = "hola";
+// console.log(typeof numero);
 
 // console.log("1" === 1);
-// console.log(1===1);
+// console.log(1==1);
 // console.log("hola"=="Hola");
 // let nombre1 = "martin";
-// let nombre2 = "MARTIN";
+// let nombre2 = "Martin";
 // console.log(nombre1 != nombre2);
 // console.log("hola"!="Hola");
-// console.log(1!==1);
-// console.log(1>=1);
+// console.log( "1" !== 1 );
+// console.log( 1 != 1 );
+
+// console.log(1 >= 1);
 
 // operadores logicos (tablas de verdad)
 /*
@@ -172,8 +178,8 @@ Primitivos: son aquellos que representan un único valor
 */
 
 // let edad = 18;
+// let dni = !true;
 // let dni = false;
-// dni = !true;
 // console.log(dni);
 
 // ejemplo AND
@@ -191,13 +197,18 @@ Primitivos: son aquellos que representan un único valor
 // let consulta = prompt("mensaje a mostrar");
 // console.log(consulta);
 
+// let numero = prompt("ingrese un numero");
+// console.log(typeof numero);
+// let suma = numero + 20;
+// console.log(suma);
+
 /*El método alert() en JavaScript es una función que muestra un cuadro de diálogo en el navegador con un mensaje y un botón "Aceptar"*/
 
-// alert("mensaje");
+// alert(suma);
 // alert(consulta);
 
 // parseInt() parseFloat() typeof
-// let numero1 = "12";
+// let numero1 = "123a45a6789";
 // numero1 = parseInt(numero1);
 // console.log(numero1);
 // let numero2 = 2;
@@ -224,6 +235,7 @@ Primitivos: son aquellos que representan un único valor
 // let numero2 = prompt("indica el segundo numero");
 // let numero1Parseado = parseInt(numero1);
 // let numero2Parseado = parseInt(numero2);
+// let resultado = numero1 + numero2;
 // let resultado = numero1Parseado + numero2Parseado;
 // let suma = alert("la suma es : " + resultado);
 
@@ -245,7 +257,7 @@ Primitivos: son aquellos que representan un único valor
 // sintaxis:
 // if (condicion o condiciones) {
 // código a ejecutar si la condición es verdadera
-//   }
+  // }
 
 // let mostrar = true;
 
@@ -254,20 +266,26 @@ Primitivos: son aquellos que representan un único valor
 //     console.log(typeof mostrar);
 // }
 // else{
-//     console.log("es falso");
-//     console.log(typeof mostrar);
+    // console.log("es falso");
+    // console.log(typeof mostrar);
+// }
+// let edad = 17;
+// if(edad >= 18){
+//   console.log("podes ingresar");
+// }
+// else{
+//   console.log("no podes ingresar");
 // }
 
 
-
 // const userAdmin = "miguel";
-// const passwordAdmin = "miguel123"
+// const passwordAdmin = "miguel123";
 
 // const user = prompt("ingrese el usuario");
 // const password = prompt("ingrese password");
 
 // if (user == userAdmin && password == passwordAdmin){
-//     alert("bienvenido señor :" + user);
+//     alert("bienvenido señor : " + user);
 // }
 // else{
 //     alert("usuario invalido");
@@ -292,12 +310,14 @@ Primitivos: son aquellos que representan un único valor
 
 // if(numero > 0){
 //     console.log("Es un número positivo");
+//     alert("es un numero pósitivo");
 // }else if(numero < 0){
 //     console.log("Es un número negativo");
 // }else{
-//     console.log("Es el número cero (0)")
-// }
+//     console.log("Es el número cero (0)");
+// };
 // ------------------------------------------------------------------------------------------//
+
 //  --swich
 // El condicional switch se utiliza para tomar diferentes acciones dependiendo del valor de una variable
 
@@ -314,7 +334,7 @@ Primitivos: son aquellos que representan un único valor
 //     console.log("Hoy es miércoles");
 //     break;
 //   case 4:
-//     console.log("Hoy es jueves");
+//     console.log("Hoy es jueves");    
 //     break;
 //   case 5:
 //     console.log("Hoy es viernes");
@@ -327,8 +347,11 @@ Primitivos: son aquellos que representan un único valor
 //     break;
 //   default:
 //     console.log("Día de la semana no válido");
-// }
+// };
+
+// console.log("se salio del ciclo");
 //-----------------------------------------------------------//
+
 // bucle while
 // El bucle while es otra estructura de control de flujo que se utiliza para repetir una acción mientras se cumple una condición.
 // La sintaxis general del bucle while es la siguiente:
@@ -339,21 +362,24 @@ Primitivos: son aquellos que representan un único valor
 // La condición se evalúa al principio de cada iteración del bucle. Si la condición es verdadera, se ejecutan las acciones dentro del bloque del bucle.
 // Si la condición es falsa, el bucle se detiene y la ejecución del programa continúa con la siguiente instrucción después del bloque del bucle
 
-let i = 0;
-while (i < 5) {
-    console.log(i);
-    i++;
-}
+// let i = 0;
+// while (i < 5) {
+//     console.log(i);
+//     i++;
+// }
+// console.log("termino el ciclo");
 
 // let numero = parseInt(prompt("ingrese un numero para mostrar los impares hasta él"));
-let contador = 1;
-while(contador <= numero){
-    if(contador % 2 != 0){
-        console.log(contador);
-    }
-    contador ++;
-}
+
+// let contador = 1;
+// while(contador <= numero){
+//     if(contador % 2 != 0){
+//         console.log(contador);
+//     }
+//     contador ++;
+// }
 //-----------------------------------------------------------//
+
 // Do while
 // El bucle do-while es una estructura de control de flujo que se utiliza para repetir una acción al menos una vez y mientras se cumpla una condición
 // sintaxis:
@@ -362,21 +388,22 @@ while(contador <= numero){
 //   } while (condición);
 
 
-// do {    
+// do {
 //     tecla = prompt("Teclear letra mágica");
 // } while (tecla != 'A');
+
 // alert("Has acertado");
 
 // let opcion = '';
 // do{
-// opcion = prompt("1.- Escribir\n 2.- Leer\n 3.- Salir\n Escoge una opción:");       
+// opcion = prompt("1.- Escribir\n 2.- Leer\n 3.- Salir\n Escoge una opción:");
 // switch(opcion){
 //    case '1':
 //       alert("Eliges Escribir")
-//        break; 
+//        break;
 //    case '2':
 //       alert("Eliges Leer")
-//        break; 
+//        break;
 //     case '3':
 //        alert("fin del programa");
 //          break;
@@ -386,6 +413,7 @@ while(contador <= numero){
 // }
 // while(opcion != '3');
 //-----------------------------------------------------------//
+
 // bucle for
 // El bucle for es una estructura de control de flujo que se utiliza para repetir una acción un número determinado de veces.
 //  La sintaxis general del bucle for es la siguiente:
@@ -395,9 +423,9 @@ while(contador <= numero){
 
 // console.log("imprimimos los numeros del 1-10");
 // for (let i = 0; i <= 10; i++) {
-//     console.log(i)
+//     console.log(i);
 // }
-
+// console.log(i);
 // imprimimos el valor de i
 // for (let i = 0; i < 3; i++) {
 //     console.log(i);
@@ -407,9 +435,10 @@ while(contador <= numero){
 
 // Imprime la suma de todos los números impares entre 1-100
 // let suma = 0;
-// for (let i = 1; i <= 100; i++) {
+// for (let i = 1; i <= 5; i++) {
 //     if (i % 2 != 0) {
 //         suma = suma + i;
 //     }
 // }
 // console.log(suma);
+
