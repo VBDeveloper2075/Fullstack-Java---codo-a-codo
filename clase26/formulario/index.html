@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario</h1>
+    <form id="formulario">
+      <div class="form-group">
+        <label for="selectField">Opción:</label>
+        <select class="form-control" id="select">
+          <option value="opcion1">Opción 1</option>
+          <option value="opcion2">Opción 2</option>
+          <option value="opcion3">Opción 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="numberField">Número:</label>
+        <input type="number" class="form-control" id="numero">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    // Obtener referencias a los elementos del formulario
+    const form = document.getElementById("formulario");
+    const select = document.getElementById("select");
+    const numero = document.getElementById("numero");
+
+    // Manejar el evento de envío del formulario
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Evitar el envío del formulario por defecto
+
+      // Obtener los valores de los campos
+      const selectedOption = select.value;
+      const numberValue = numero.value;
+
+      // Hacer algo con los valores obtenidos
+      console.log("Opción seleccionada:", selectedOption);
+      console.log("Valor numérico:", numberValue);
+
+      // Restablecer los campos del formulario
+      form.reset();
+    });
+  </script>
+</body>
+</html>

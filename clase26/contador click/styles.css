@@ -1,0 +1,38 @@
+body{
+    background-color:#898989;
+    color: rgba(0, 0, 0, 0.8);
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 80px;
+}
+.container{
+    padding-top: 100px;
+    height: 600px;
+    max-width: 600px;
+   
+    background-color:steelblue ;
+}
+
+.boton{
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    width: 150px;
+
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow:0 1px 1px rgba(0,0,0,0.3) ;
+
+}
+
+
+.boton{
+    color: white;
+    background-color: green;
+}
+.boton:active{
+    background-color: red;    
+}
