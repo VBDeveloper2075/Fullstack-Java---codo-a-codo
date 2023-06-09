@@ -41,13 +41,14 @@ function calcularPago() {
 
 }
 
-//botones
+//botones PREVENT DEFAULT ES UNA PROPIEDAD DE EVENT Y ES PARA QUE NO SE REFRESQUE PERMANENTEMENTE LA PANTALLA - se puede poner event o e, o otra cosa pero siempre se tienen que poner en los dos lados lo mismo
+
 btnResumen.addEventListener('click', (event) => {
     event.preventDefault();
     comprobacion();
     calcularPago();
 })
-
+// propiedad  .reset  es para que cuando apriet el botón borrar se limpie el formulario
 btnBorrar.addEventListener('click', () => formulario.reset());
 
 //comprobar ingresos
